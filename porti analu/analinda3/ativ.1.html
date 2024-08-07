@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function calculartriangulo(){
+        let baseTriangulo = parsefloat(prompt("digite  valor da base do triangulo"))
+        let alturatriangulo = parseFloat(prompt("digite o valor da altura do triangulo"))
+        let areatriangulo = (baseTriangulo * alturatriangulo) / 2
+        window.alert ('a area do triangulo é: ${areatriangulo}')
+     }
+
+     function calculartrapezio (){
+        let basemaior = parsefloat(prompt("digite o valor da base maior"))
+        let basemenor = parsefloat(prompt("digite o valor da base menor"))
+        let alturatrapezio = parsefloat(prompt("digite o valor do trapezio"))
+        let areatrapezio = ((basemaior + basemenor)/2) * alturatrapezio;
+        window.alert ('a area do trapezio é: ${areatrapezio}')
+     }
+
+     function calcularcirculo (){
+        let raio= parsefloat(prompt("digite o valor do raio do circulo"))
+        let areacirculo = Math.PI * raio ** 2;
+        window.alert ('a area do circulo é: ${areadocirculo}');
+     }
+
+     function calcularquadrado (){
+        let lado = parseFloat(prompt("digite o valor do lado"))
+        let areaquadrado = lado ** 2 
+        window.alert('a area do quadrado é: ${areaquadrado}')
+     }
+
+     var figura = prompt("digite o tipo de figura geometrica:")
+
+     switch (figura) {
+        case "triangulo":
+            calculartriangulo()
+            break;
+
+        case "trapezio":
+            calculartrapezio()
+            break;
+            
+        case "circulo":
+            calcularcirculo()
+            break;
+            
+        case "quadrado":
+            calcularquadrado()
+            break;
+            
+            default:
+                window.alert("figura geometrica não reconhecida. Tente novamenta")
+
+     }
+
+    </script>
+    
+</body>
+</html>
