@@ -1,0 +1,37 @@
+#output {
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px hwb(323 44% 3%);
+    width: 50%;
+}
+
+#clearButton {
+    background-color: #8229ac;
+}
+
+#clearButton:hover {
+    background-color: #520f63;
+}
+
+#enviarbtn {
+    margin-left: 20px;
+}
+
+label, input, button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input, button{
+    padding: 10px;
+    border: 1px, solid #ff70ff;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgba(#e428cb);
+    color: #ff6be6;
+    cursor: pointer;
+}
